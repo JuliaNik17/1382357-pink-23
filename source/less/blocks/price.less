@@ -3,5 +3,36 @@
 }
 
 .price__wrapper {
-  margin: 83px 0 49px;
+  display: block;
+  width: 100%;
+  margin: 83px auto 49px;
+}
+
+.price__table {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.price__table--tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .price__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .price__table--tablet {
+    display: inline;
+    width: 100%;
+  }
+
+  .price__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }

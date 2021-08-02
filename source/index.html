@@ -2,17 +2,16 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logotype_mobile.svg" width="74" height="23" alt="Пинк">
-      </a>
+      <a class="page-header__logo"></a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list site-list visually-hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a>
                 Главная
@@ -83,7 +82,7 @@
           <img class="information__picture" src="img/information-list_picture_smile.jpg" width="157" height="320" alt="Фотография на телефоне в розовом цвете">
         </div>
       </section>
-      <section class="round-diagram visually-hidden">
+      <section class="round-diagram">
         <h2 class="visually-hidden">Британские ученые о приложении "Пинк"</h2>
         <div class="round-diagram__wrapper">
           <img src="img/round_diagram_picture.svg" width="238" height="276" alt="Секундомер с цифрой 24">
@@ -100,7 +99,7 @@
           <div class="reviews__list">
             <blockquote class="reviews__item reviews__item--petrov reviews-slider__item">
               <cite class="reviews__item-author">Николай Петров</cite>
-              <p class="reviews__item-text">«Это приложение перевернуло мой мир<br> и позволило по-новому взглянуть на<br> привычные серые вещи! А еще я<br> познакомился со своей будущей женой<br> в комментариях к выложенной фотографии!»</p>
+              <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               <p class="reviews__item-info">25 лет, водитель трамвая</p>
             </blockquote>
             <button class="reviews__prev" type="button">Предыдущий отзыв</button>
@@ -116,6 +115,18 @@
       <section class="price">
         <div class="price__wrapper price-slider">
           <h2 class="visually-hidden">Наши тарифы</h2>
+          <table class="price__table price__table--tablet">
+            <tr class="table-head table-tablet"></tr>
+            <tr class="table-line">
+              <td class="table-text">Розовый фильтр</td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-text">Смайлики</td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-text">Комментарии</td>
+            </tr>
+          </table>
           <table class="price__table price__table--base price-slider__item">
             <tr class="table-head">
               <td class="table-name">База</td>
@@ -199,7 +210,7 @@
               <p class="contacts__item-link">ул. Большая<br> Конюшенная, 19/8</p>
             </li>
           </ul>
-          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCUiYFWy-D" width="320" height="200" allowfullscreen="true" style="position: relative;"></iframe>
+          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCUiYFWy-D" allowfullscreen="true" style="position: relative;"></iframe>
         </div>
       </section>
     </main>
