@@ -31,6 +31,41 @@
 }
 
 .contacts__map {
+  width: 100%;
+  min-height: 200px;
+  margin: 0;
   background: @grey-whisper url(../../img/contacts_map.jpg);
 
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    width: 50%;
+  }
+
+  .contacts__item:last-child {
+    width: 100%;
+  }
+
+  .contacts__map {
+    width: 100%;
+    min-height: 374px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__item:last-child {
+    margin-top: -90px;
+  }
+
+  .contacts__map {
+    min-height: 502px;
+  }
 }

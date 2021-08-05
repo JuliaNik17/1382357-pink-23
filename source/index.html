@@ -2,17 +2,16 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logotype_mobile.svg" width="74" height="23" alt="Пинк">
-      </a>
+      <a class="page-header__logo"></a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list site-list visually-hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a>
                 Главная
@@ -69,21 +68,21 @@
           <ul class="information__list">
             <li class="information__item">
               <h3 class="information__item-head">Поднимает настроение</h3>
-              <p class="information__item-text">Приложение позволит вам победить<br> осеннюю хандру и депрессию<br> буквально в несколько кликов!</p>
+              <p class="information__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="information__item">
               <h3 class="information__item-head">Меняет мир вокруг</h3>
-              <p class="information__item-text">Сделайте снимок и украсьте его<br> смайликом или текстовой подписью,<br> чтобы усилить эффект</p>
+              <p class="information__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="information__item">
               <h3 class="information__item-head">Заводит новых друзей</h3>
-              <p class="information__item-text">Ставьте лайки, комментируйте,<br> делитесь фотографиями с друзьями и<br> заводите новых</p>
+              <p class="information__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
           <img class="information__picture" src="img/information-list_picture_smile.jpg" width="157" height="320" alt="Фотография на телефоне в розовом цвете">
         </div>
       </section>
-      <section class="round-diagram visually-hidden">
+      <section class="round-diagram">
         <h2 class="visually-hidden">Британские ученые о приложении "Пинк"</h2>
         <div class="round-diagram__wrapper">
           <img src="img/round_diagram_picture.svg" width="238" height="276" alt="Секундомер с цифрой 24">
@@ -100,7 +99,7 @@
           <div class="reviews__list">
             <blockquote class="reviews__item reviews__item--petrov reviews-slider__item">
               <cite class="reviews__item-author">Николай Петров</cite>
-              <p class="reviews__item-text">«Это приложение перевернуло мой мир<br> и позволило по-новому взглянуть на<br> привычные серые вещи! А еще я<br> познакомился со своей будущей женой<br> в комментариях к выложенной фотографии!»</p>
+              <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               <p class="reviews__item-info">25 лет, водитель трамвая</p>
             </blockquote>
             <button class="reviews__prev" type="button">Предыдущий отзыв</button>
@@ -116,6 +115,20 @@
       <section class="price">
         <div class="price__wrapper price-slider">
           <h2 class="visually-hidden">Наши тарифы</h2>
+          <table class="price__table price__table--tablet">
+            <tr class="table-tablet">
+              <td class="table-tablet__head">Название тарифа</td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-line__text">Розовый фильтр</td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-line__text">Смайлики</td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-line__text">Комментарии</td>
+            </tr>
+          </table>
           <table class="price__table price__table--base price-slider__item">
             <tr class="table-head">
               <td class="table-name">База</td>
@@ -123,15 +136,15 @@
             </tr>
             <tr class="table-line">
               <td class="table-text">Розовый фильтр</td>
-              <td class="table-pic"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
+              <td class="table-yes"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
             </tr>
             <tr class="table-line">
               <td class="table-text">Смайлики</td>
-              <td class="table-pic"><img src="img/price_table_no.svg"width="27" height="27" alt="Не входит в тариф"></td>
+              <td class="table-no"><img src="img/price_table_no.svg"width="27" height="27" alt="Не входит в тариф"></td>
             </tr>
             <tr class="table-line">
               <td class="table-text">Комментарии</td>
-              <td class="table-pic"><img src="img/price_table_no.svg"width="27" height="27" alt="Не входит в тариф"></td>
+              <td class="table-no"><img src="img/price_table_no.svg"width="27" height="27" alt="Не входит в тариф"></td>
             </tr>
           </table>
 
@@ -142,15 +155,15 @@
             </tr>
             <tr class="table-line">
               <td class="table-text">Розовый фильтр</td>
-              <td class="table-pic"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
+              <td class="table-yes"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
             </tr>
             <tr class="table-line">
               <td class="table-text">Смайлики</td>
-              <td class="table-pic"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
+              <td class="table-yes"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
             </tr>
             <tr class="table-line">
               <td class="table-text">Комментарии</td>
-              <td class="table-pic"><img src="img/price_table_no.svg"width="27" height="27" alt="Не входит в тариф"></td>
+              <td class="table-no"><img src="img/price_table_no.svg"width="27" height="27" alt="Не входит в тариф"></td>
             </tr>
           </table>
 
@@ -161,15 +174,15 @@
             </tr>
             <tr class="table-line">
               <td class="table-text">Розовый фильтр</td>
-              <td class="table-pic"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
+              <td class="table-yes"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
             </tr>
             <tr class="table-line">
               <td class="table-text">Смайлики</td>
-              <td class="table-pic"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
+              <td class="table-yes"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
             </tr>
             <tr class="table-line">
               <td class="table-text">Комментарии</td>
-              <td class="table-pic"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
+              <td class="table-yes"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
             </tr>
           </table>
           <p class="price__toggles price-slider__toggles">
@@ -199,7 +212,7 @@
               <p class="contacts__item-link">ул. Большая<br> Конюшенная, 19/8</p>
             </li>
           </ul>
-          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCUiYFWy-D" width="320" height="200" allowfullscreen="true" style="position: relative;"></iframe>
+          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCUiYFWy-D" allowfullscreen="true" style="position: relative;"></iframe>
         </div>
       </section>
     </main>
