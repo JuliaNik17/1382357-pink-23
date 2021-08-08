@@ -6,3 +6,16 @@
   .red-legend;
   margin: 42px auto;
 }
+
+@media (min-width: @tablet-width) {
+  .achivements {
+    order: 4;
+    background-color: @white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .achivements {
+    grid-column: span 2;
+  }
+}
