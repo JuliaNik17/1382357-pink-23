@@ -6,14 +6,61 @@
   .round-diagram {
     display: flex;
   }
+
   .round-diagram__wrapper {
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 54px 20px 109px;
+  }
+
+  .round-diagram__info-head {
+    width: 50%;
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
+
+  .round-diagram__info-text {
+    margin: 0;
+  }
+
+  .round-diagram__info-link {
+    color: @red-cerise;
+    text-decoration: underline;
+    margin-top: 24px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .round-diagram {
+    background-color: @grey-background;
+    width: 1200px;
+  }
+
   .round-diagram__wrapper {
     grid-template-columns: 1fr 2fr;
+    margin: 0 130px 67px;
+  }
+
+  .round-diagram__info-head {
+    line-height: 30px;
+  }
+
+  .round-diagram__info-text {
+    width: 534px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .round-diagram__info-text br {
+    display: none;
+  }
+
+  .round-diagram__info-link {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 47px;
   }
 }
