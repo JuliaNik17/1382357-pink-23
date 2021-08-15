@@ -8,31 +8,33 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo"></a>
-      <nav class="main-nav">
+      <a class="page-header__logo"><img></a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a>
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
       </nav>
     </header>
     <main class="page-main">
@@ -62,20 +64,20 @@
         <header class="information__header">
           <h2 class="visually-hidden">Информация о приложении "Пинк"</h2>
           <p class="information__slogan">Устали от серости мегаполиса?</p>
-          <p class="information__slogan">Нам есть, что вам предложить!</p>
+          <p class="information__slogan">Нам есть, что вам<br> предложить!</p>
         </header>
         <div class="information__wrapper">
           <ul class="information__list">
             <li class="information__item">
               <h3 class="information__item-head">Поднимает настроение</h3>
-              <p class="information__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <p class="information__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в<br> несколько кликов!</p>
             </li>
             <li class="information__item">
               <h3 class="information__item-head">Меняет мир вокруг</h3>
-              <p class="information__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p class="information__item-text">Сделайте снимок и<br> украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="information__item">
-              <h3 class="information__item-head">Заводит новых друзей</h3>
+              <h3 class="information__item-head">Заводит<br> новых друзей</h3>
               <p class="information__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
@@ -88,12 +90,13 @@
           <img src="img/round_diagram_picture.svg" width="238" height="276" alt="Секундомер с цифрой 24">
           <div class="round-diagram__info">
             <h3 class="round-diagram__info-head">Эффект на 24 часа!</h3>
-            <p class="round-diagram__info-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <p class="round-diagram__info-text">Британские ученые провели исследования<br> и доказали, что положительный эффект<br> от использования приложения длится<br> целые сутки!</p>
             <a class="round-diagram__info-link">Узнать больше об исследовании</a>
           </div>
         </div>
       </section>
       <section class="reviews">
+        <img class="reviews__img" src="img/quotes.svg" width="79" height="63" alt="Кавычки">
         <div class="reviews__wrapper reviews-slider">
           <h2 class="visually-hidden">Отзывы наших пользователей</h2>
           <div class="reviews__list">
@@ -102,8 +105,8 @@
               <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               <p class="reviews__item-info">25 лет, водитель трамвая</p>
             </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <button class="reviews__prev" type="button"></button>
+            <button class="reviews__next" type="button"></button>
           </div>
           <p class="reviews__toggles reviews-slider__toggles">
             <button class="reviews-slider__toggle reviews-slider__toggle--current" type="button">1</button>
@@ -241,5 +244,23 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
+
   </body>
 </html>

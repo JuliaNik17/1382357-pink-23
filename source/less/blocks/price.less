@@ -6,7 +6,7 @@
 .price__wrapper {
   display: block;
   width: 100%;
-  margin: 83px auto 49px;
+  margin: 83px auto 0;
 }
 
 .price__table {
@@ -18,13 +18,19 @@
   display: none;
 }
 
+.price__toggles {
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 49px;
+}
+
 @media (min-width: @tablet-width) {
   .price__wrapper {
     width: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    // padding: 70px 20px;
-    // margin: 0;
+    padding-top: 114px;
+    padding-bottom: 70px;
   }
 
   .price__table--tablet {
