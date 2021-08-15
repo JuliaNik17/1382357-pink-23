@@ -13,7 +13,7 @@
   }
 
   .site-list__item a {
-    width: 100%;
+    // width: 100%;
     font-weight: 700;
     color: @white;
     text-transform: uppercase;
@@ -21,6 +21,7 @@
     text-decoration: none;
     background-color: @light-black;
     padding: 25px 93px;
+    box-sizing: border-box;
   }
 }
 
@@ -43,7 +44,7 @@
     margin-right: 78px;
     background-color: none;
     border: none;
-    padding: 48px 0 49px;
+    padding: 13px 0;
 
     &:last-child {
       margin-right: 0;
@@ -69,7 +70,8 @@
     font-size: 18px;
     line-height: 18px;
     color: @white;
-    padding: 48px 0 49px;
+    display: block;
+    // padding: 13px 0;
 
     &:hover {
       color: @red-cerise;
