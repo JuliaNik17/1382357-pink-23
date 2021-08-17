@@ -1,16 +1,16 @@
 .upload__wrapper {
-  margin: 29px 0;
+  margin: 0;
 }
 
 .upload__slogan {
   color: #283645;
   line-height: 30px;
   text-align: center;
-  margin: 0 20px 52px;
+  margin: 49px 20px 52px;
 }
 
-.upload__form {
-  background-color: #F2F2F2;
+.upload__content {
+  background-color: @grey-background;
 }
 
 .upload__form fieldset {
@@ -26,6 +26,7 @@
 @media (min-width: @tablet-width) {
   .upload__slogan {
     font-size: 18px;
+    margin: 73px auto 78px;
   }
 
   .upload__form {
@@ -40,7 +41,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .upload__slogan {
+    margin: 67px auto 75px;
+  }
+
   .upload__form {
+    width: 940px;
     grid-template-rows: 2fr 1fr;
+    margin: 57px auto;
   }
 }

@@ -1,6 +1,31 @@
 .tools-list {
   list-style: none;
   padding-left: 0;
-  // display: flex;
-  margin: 0 20px;
+  display: flex;
+  margin: 0 20px 75px;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
 }
+
+@media (max-width: @mobile-width-only){
+  .tools-list::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/upload_scale_crop.svg");
+    width: 240px;
+    height: 14px;
+    top: 90px;
+    left: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .tools-list {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {}
+

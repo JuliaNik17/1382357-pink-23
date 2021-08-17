@@ -1,17 +1,37 @@
-.comment label {
-  .red-lable;
-  margin-left: 23px;
-  margin-bottom: 17px;
+.comment {
+  border: none;
+  margin: 0 20px 52px;
+  padding: 0;
+}
+
+.comment legend {
+  .red-legend;
+  background-color: @white;
+  margin-bottom: 22px;
 }
 
 @media (min-width: @tablet-width) {
   .comment {
     order: 5;
+    border: 2px solid @grey-whisper;
+    border-radius: 1px;
+    padding: 42px 60px 53px;
+  }
+
+  .comment legend {
+    padding: 14px 38px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .comment {
     grid-column: span 2;
+    margin: 0;
+    padding: 25px 60px 45px;
+  }
+
+  .comment legend {
+    margin: 0;
+    padding: 14px 38px;
   }
 }

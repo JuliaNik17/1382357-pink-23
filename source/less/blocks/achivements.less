@@ -1,21 +1,38 @@
 .achivements {
   background-color: @grey-background;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .achivements legend {
   .red-legend;
-  margin: 42px auto;
+  padding: 42px 51px 44px;
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
   .achivements {
     order: 4;
     background-color: @white;
+    border: 2px solid @grey-whisper;
+    border-radius: 1px;
+    margin: 0 22px 51px;
+    // width: auto;
+  }
+
+  .achivements legend {
+    background-color: @white;
+    width: auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .achivements {
     grid-column: span 2;
+  }
+
+  .achivements legend {
+    width: auto;
   }
 }
