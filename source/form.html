@@ -98,11 +98,11 @@
             <fieldset class="user-contacts">
               <legend>Контактная информация</legend>
               <ul class="user-contacts__list">
-                <li class="user-contacts__item">
+                <li class="user-contacts__item user-contacts__item--phone">
                   <label for="phone-number">Номер телефона</label>
                   <input type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
                 </li>
-                <li class="user-contacts__item">
+                <li class="user-contacts__item user-contacts__item--email">
                   <label for="e-mail">Адрес почты</label>
                   <input type="email" name="e-mail" id="e-mail" placeholder="Введите почту *" required>
                 </li>
@@ -113,15 +113,15 @@
               <legend>С каким приложением путешествовали?</legend>
               <ul class="app-question__list">
                 <li class="app-question__item">
-                  <input class="visually-hidden app-question__radio" type="radio" name="ios" id="ios" checked>
+                  <input class="visually-hidden app-question__radio" type="radio" name="app-name" value="ios" id="ios" checked>
                   <label class="app-name" for="ios">Pink для iOS</label>
                 </li>
                 <li class="app-question__item">
-                  <input class="visually-hidden app-question__radio" type="radio" name="android" id="android">
+                  <input class="visually-hidden app-question__radio" type="radio" name="app-name" value="android" id="android">
                   <label class="app-name" for="android">Pink на Android</label>
                 </li>
                 <li class="app-question__item">
-                  <input class="visually-hidden app-question__radio" type="radio" name="windows" id="windows">
+                  <input class="visually-hidden app-question__radio" type="radio" name="app-name" value="windows" id="windows">
                   <label class="app-name" for="windows">Windows Phone</label>
                 </li>
               </ul>

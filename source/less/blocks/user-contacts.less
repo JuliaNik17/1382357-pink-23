@@ -60,28 +60,28 @@
   }
 
   .user-contacts__item input {
-    padding: 23px 303px 23px 20px;
-    position: relative;
+    padding: 17px 303px 16px 20px;
+    // position: relative;
   }
 
-  .user-contacts__item:first-child input::before {
+  .user-contacts__item--phone::after {
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
+    right: 40px;
     width: 59px;
     height: 59px;
-    background-image: url("../../img/phone_icon.svg");
+    background-image: url("../img/phone_icon.svg");
   }
 
-  .user-contacts__item:last-child input::before {
+  .user-contacts__item--email::after {
     content: "";
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 0;
+    right: 40px;
     width: 59px;
     height: 59px;
-    background: @grey-whisper url("../../img/mail_icon.svg");
+    background: @grey-whisper url("../img/mail_icon.svg");
   }
 }
 
@@ -99,11 +99,19 @@
   }
 
   .user-contacts__item input {
-    padding: 23px 20px;
+    padding-right: 20px;
     width: 371px;
   }
 
-  .user-contacts__item:first-child {
+  .user-contacts__item--phone {
     margin-right: 74px;
+  }
+
+  .user-contacts__item--phone::after {
+    right: 0;
+  }
+
+  .user-contacts__item--email::after {
+    right: 0;
   }
 }
