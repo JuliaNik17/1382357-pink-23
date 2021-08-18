@@ -1,11 +1,13 @@
-.tool-range {
-  display: none;
+@media (max-width: @mobile-width-only) {
+  .tool-range__crop,
+  .tool-range__fill,
+  .tool-range__contrast {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .tool-range {
-    display: block;
-  }
+
 }
 
 @media (min-width: @desktop-width) {}

@@ -1,0 +1,55 @@
+.tool-button {
+  border: none;
+  padding: 0;
+}
+
+.tool-button__fill {
+  fill: @light-black;
+  opacity: 0.3;
+}
+
+.tool-button__contrast {
+  fill: @light-black;
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .tool-button__crop {
+    width: 22px;
+    height: 22px;
+    margin-right: 29px;
+  }
+
+  .tool-button__fill {
+    width: 24px;
+    height: 22px;
+    fill: @red-cerise;
+    opacity: 1;
+    margin-right: 28px;
+  }
+
+  .tool-button__contrast {
+    width: 16px;
+    height: 16px;
+    fill: @red-cerise;
+    opacity: 1;
+    margin-right: 32px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tool-button__crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  .tool-button__fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .tool-button__contrast {
+    width: 32px;
+    height: 32px;
+  }
+}

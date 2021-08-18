@@ -6,7 +6,8 @@
 
 .intro__header {
   width: fit-content;
-  background: url(../../img/intro_background_mobile.jpg) no-repeat 0 0;
+  background: url("../img/intro_background_mobile.jpg") no-repeat 0 0;
+  background-position-x: center;
   background-size: cover;
   overflow: visible;
   height: 462px;
@@ -59,7 +60,8 @@
 
 @media (min-width: @tablet-width) {
   .intro {
-    background: url(../../img/intro_background_tablet.jpg) no-repeat @dark-dark-blue;
+    background: url("../img/intro_background_tablet.jpg") no-repeat @dark-dark-blue;
+    background-position-x: center;
     width: 100%;
     // height: 729px;
     z-index: 3;
@@ -74,7 +76,7 @@
     margin: 0;
   }
 
-  .intro__wrapper {
+  .intro__content {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -104,9 +106,16 @@
 
 @media (min-width: @desktop-width) {
   .intro {
-    background: url(../../img/intro_background_desktop.jpg) no-repeat;
+    width: 100%;
+    background: @light-black url("../img/intro_background_desktop.jpg") no-repeat;
+    background-position-x: center;
     margin-top: -110px;
     padding-top: 110px;
+  }
+
+  .into__wrapper {
+    width: 940px;
+    margin: 0 auto;
   }
 
   .intro__slogan {
@@ -116,7 +125,7 @@
     padding: 114px 130px 51px;
   }
 
-  .intro__wrapper {
+  .intro__content {
     padding-left: 130px;
   }
 

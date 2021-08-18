@@ -1,11 +1,12 @@
 .main-head {
-  background: @black url(../../img/background_mobile.jpg) no-repeat;
-  margin: 0;
+  background: @black url("../img/background_mobile.jpg") no-repeat;
+  background-position-x: center;
+  margin: 0 auto;
 
 }
 
 .main-head h2 {
-  margin: 0;
+  margin: 0 auto;
   padding: 36px 26px 84px;
   color: #FFFFFF;
   font-weight: 300;
@@ -16,17 +17,37 @@
 
 @media (min-width: @tablet-width) {
   .main-head {
-    background: @black url(../../img/background__tablet.jpg) no-repeat;
+    background: @black url("../img/background__tablet.jpg") no-repeat;
+    background-position-x: center;
   }
 
   .main-head h2 {
     font-size: 50px;
     line-height: 68px;
+    padding: 80px 151px 143px;
+  }
+}
+
+@media (max-width: @tablet-width-only) {
+  .main-head br {
+    display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-head {
-    background: @black url(../../img/background__desktop.jpg) no-repeat;
+    width: 100%;
+    background: @black url("../img/background__desktop.jpg") no-repeat;
+    background-position-x: center;
+    margin: 0;
+    margin-top: -110px;
+    padding-top: 110px;
+    padding-bottom: 104px;
+  }
+
+  .main-head h2 {
+    width: 747px;
+    margin: 0 auto;
+    padding: 74px 0 0;
   }
 }

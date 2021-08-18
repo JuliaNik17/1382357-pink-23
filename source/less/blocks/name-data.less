@@ -1,5 +1,11 @@
+.name-data {
+  border: none;
+}
+
 .name-data__list {
   .list-style;
+  padding: 0 20px;
+  margin: 0;
 }
 
 .name-data__item {
@@ -15,7 +21,7 @@
 
 .name-data__item input {
   .black-input;
-  padding: 23px 78px 23px 20px;
+  padding: 23px 0 23px 20px;
   margin: 0 0 29px;
 }
 
@@ -25,10 +31,30 @@
   }
 
   .name-data__item {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+    flex-direction: row;
+    // justify-content: center;
     align-items: center;
+  }
+
+  .name-data__item label {
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  .name-data__item--familyname,
+  .name-data__item--father-name {
+    margin-bottom: 56px;
+    width: 80%;
+  }
+
+  .name-data__item--name {
+    margin-bottom: 56px;
+    width: 85%;
   }
 }
 
-@media (min-width: @desktop-width) {}
+@media (min-width: @desktop-width) {
+  .name-data__list {
+    padding: 0;
+  }
+}

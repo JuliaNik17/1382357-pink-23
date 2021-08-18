@@ -1,5 +1,10 @@
+.contacts {
+  width: 100%;
+  margin: 0;
+}
+
 .contacts__wrapper {
-  margin: 47px auto 0;
+  margin: 47px 0 0;
 }
 
 .contacts__slogan {
@@ -15,6 +20,7 @@
   .list-style;
   text-align: center;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .contacts__item-title {
@@ -39,8 +45,14 @@
   min-height: 200px;
   margin: 0;
   border: none;
-  background: @grey-whisper url(../../img/contacts_map.jpg);
+  background: @grey-whisper url(../img/contacts_map.jpg);
 
+}
+
+@media (max-width: @mobile-width-only) {
+  .contacts__item-link br {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
