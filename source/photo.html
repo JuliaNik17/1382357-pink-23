@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -46,21 +50,34 @@
       <section class="photo">
         <h2 class="visually-hidden">Фотографии пользователей</h2>
         <p class="photo__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <div class="photo__wrapper">
-          <article class="photo-post panorama">
-            <a class="panorama__pic" href="#"><img></a>
-            <div class="panorama__wrapper">
-              <p class="photo-author">Анна <time datetime="26.07.2021"> (5 минут назад)</time></p>
-              <p class="photo-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <div class="photo-like">
-                <button class="like-button button"><img src="img/like_button.svg"></button>
-                <p class="like-counter">Нравится: 215</p>
-            </div>
-            </div>
-          </article>
 
+        <article class="photo-post panorama">
+          <a class="panorama__pic" href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/article_photo_one_desktop.jpg 1x, img/article_photo_one_desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/article_photo_one_tablet.jpg 1x, img/article_photo_one_tablet@2x.jpg 2x">
+              <img src="img/article_photo_one.jpg" alt="Панорама">
+            </picture>
+          </a>
+          <div class="panorama__wrapper">
+            <p class="photo-author">Анна <time datetime="26.07.2021"> (5 минут назад)</time></p>
+            <p class="photo-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="photo-like">
+              <button class="like-button button"><img src="img/like_button.svg"></button>
+              <p class="like-counter">Нравится: 215</p>
+          </div>
+          </div>
+        </article>
+
+        <div class="photo__wrapper">
           <article class="photo-post">
-            <a class="photo-pic" href="#"><img src="img/article_photo-two.jpg" width="280" height="180" alt="Фото автомобиля на стоянке"></a>
+            <a class="photo-pic" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/atricle_photo_two_desktop.jpg 1x, img/article_photo_two_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/article_photo_two_tablet.jpg 1x, img/article_photo_two_tablet@2x.jpg 2x">
+                <img src="img/article_photo_two.jpg" alt="Фото автомобиля на стоянке">
+              </picture>
+            </a>
             <p class="photo-author">Левон <time datetime="26.07.2021"> (5 часов назад)</time></p>
             <p class="photo-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="photo-like">
@@ -70,7 +87,14 @@
           </article>
 
           <article class="photo-post">
-            <a class="photo-post__pic-three" href="#"><img src="img/article_photo_three.jpg" width="280" height="180" alt="Фото барабанов"></a>              <p class="photo-author">Антон <time datetime="26.07.2021"> (12 часов назад)</time></p>
+            <a class="photo-post__pic-three" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/article_photo_three_desktop.jpg 1x, img/article_photo_three_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/article_photo_three_tablet.jpg 1x, img/article_photo_three_tablet@2x.jpg 2x">
+                <img src="img/article_photo_three.jpg" alt="Фото барабанов">
+              </picture>
+            </a>
+            <p class="photo-author">Антон <time datetime="26.07.2021"> (12 часов назад)</time></p>
             <p class="photo-text">Соседи будут рады!</p>
             <div class="photo-like">
               <button class="like-button button"><img src="img/like_button.svg"></button>
@@ -79,7 +103,13 @@
           </article>
 
           <article class="photo-post">
-            <a class="photo-post__pic-foure" href="#"><img src="img/article_photo-foure.jpg" width="280" height="180" alt="Фото стеклянной крыши"></a>
+            <a class="photo-post__pic-foure" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/article_photo_foure_desktop.jpg 1x, img/article_photo_foure_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/article_photo_foure_tablet.jpg 1x, img/article_photo_foure_tablet@2x.jpg 2x">
+                <img src="img/article_photo-foure.jpg" alt="Фото стеклянной крыши">
+              </picture>
+            </a>
             <p class="photo-author">Борис <time datetime="26.07.2021"> (20 часов назад)</time></p>
             <p class="photo-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="photo-like">
@@ -89,7 +119,13 @@
           </article>
 
           <article class="photo-post">
-            <a class="photo-post__pic-five" href="#"><img src="img/article_photo_five.jpg" width="280" height="180" alt="Фото кубанской бахчи"></a>
+            <a class="photo-post__pic-five" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/article_photo_five_desktop.jpg 1x, img/article_photo_five_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/article_photo_five_tablet.jpg 1x, img/article_photo_five_tablet@2x.jpg 2x">
+                <img src="img/article_photo_five.jpg" alt="Фото кубанской бахчи">
+              </picture>
+            </a>
             <p class="photo-author">Сергей <time datetime="26.07.2021"> (25 часов назад)</time></p>
             <p class="photo-text">Самая кубанская в мире!</p>
             <div class="photo-like">
@@ -99,7 +135,13 @@
           </article>
 
           <article class="photo-post">
-            <a class="photo-post__pic-six" href="#"><img src="img/article_photo_six.jpg" width="280" height="180" alt="Фото ног на фоне гор"></a>
+            <a class="photo-post__pic-six" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/article_photo_six_desktop.jpg 1x, img/article_photo_six_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/article_photo_six_tablet.jpg 1x, img/article_photo_six_tablet@2x.jpg 2x">
+                <img src="img/article_photo_six.jpg" alt="Фото ног на фоне гор">
+              </picture>
+            </a>
             <p class="photo-author">Максим <time datetime="26.07.2021"> (40 часов назад)</time></p>
             <p class="photo-text">Где снег-то?</p>
             <div class="photo-like">
@@ -109,7 +151,13 @@
           </article>
 
           <article class="photo-post">
-            <a class="photo-post__pic-seven" href="#"><img src="img/article_photo_seven.jpg" width="280" height="180" alt="Фото крыла самолета на фоне заката"></a>
+            <a class="photo-post__pic-seven" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/article_photo_seven_desktop.jpg 1x, img/article_photo_seven_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/article_photo_seven_tablet.jpg 1x, img/article_photo_seven_tablet@2x.jpg 2x">
+                <img src="img/article_photo_seven.jpg" alt="Фото крыла самолета на фоне заката">
+              </picture>
+            </a>
             <p class="photo-author">Надежда <time datetime="26.07.2021"> (45 часов назад)</time></p>
             <p class="photo-text">Всем GM и взаимные лайки!</p>
             <div class="photo-like">
@@ -126,7 +174,10 @@
           <p class="upload__slogan">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
           <div class="upload__content">
             <form class="upload__form" method="get" action="https://echo.htmlacademy.ru">
-              <img class="upload__pic" src="img/upload_pic.jpg" width="280" height="374" alt="Заргузившееся фото">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/upload_pic_tablet.jpg">
+                <img class="upload__pic" src="img/upload_pic.jpg" alt="Заргузившееся фото">
+              </picture>
 
               <fieldset>
                 <ul class="tools-list">

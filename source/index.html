@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -86,7 +90,12 @@
                 <p class="information__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
-            <img class="information__picture" src="img/information-list_picture_smile.jpg" width="157" height="320" alt="Фотография на телефоне в розовом цвете">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/information-list_picture_smile_desktop.jpg 1x, img/information-list_picture_smile_desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/information-list_picture_smile_tablet.jpg 1x, img/information-list_picture_smile_tablet@2x.jpg 2x">
+              <img class="information__picture" src="img/information-list_picture_smile.jpg" alt="Фотография на телефоне в розовом цвете">
+            </picture>
+
           </div>
         </div>
       </section>
