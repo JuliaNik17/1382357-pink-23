@@ -2,13 +2,12 @@
   background: @black url("../img/background_mobile.jpg") no-repeat;
   background-position-x: center;
   margin: 0 auto;
-
 }
 
 .main-head h2 {
   margin: 0 auto;
   padding: 36px 26px 84px;
-  color: #FFFFFF;
+  color: @white;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -19,6 +18,11 @@
   .main-head {
     background: @black url("../img/background__tablet.jpg") no-repeat;
     background-position-x: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background_tablet@2x.jpg");
+      background-size: 1338px auto;
+    }
   }
 
   .main-head h2 {
