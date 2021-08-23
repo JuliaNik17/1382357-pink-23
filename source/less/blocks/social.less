@@ -10,6 +10,18 @@
   height: 48px;
 }
 
+.social__icon {
+  color: fade(@light-black, 10%);
+
+  &:hover {
+    color: @light-black;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .social__list {
     margin: 39px 74px 40px;
