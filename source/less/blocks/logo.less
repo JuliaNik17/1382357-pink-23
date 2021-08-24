@@ -1,0 +1,57 @@
+.logo {
+  color: @white;
+
+  &:hover {
+    color: @red-cerise;
+  }
+
+  &:active {
+    color: @white;
+    opacity: 0.3;
+  }
+}
+
+.logo__sparkle {
+  display: none;
+}
+
+.logo__glasses {
+  display: none;
+}
+
+.logo__big-name {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .logo {
+    width: 145px;
+    height: 40px;
+  }
+
+  .logo__name {
+    display: none;
+  }
+
+  .logo__big-name {
+    display: block;
+  }
+
+  .logo__glasses {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo {
+    width: 147px;
+  }
+
+  .logo__sparkle {
+    display: block;
+  }
+
+  .logo__glasses {
+    display: none;
+  }
+}
