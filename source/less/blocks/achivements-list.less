@@ -3,13 +3,18 @@
   margin: 0 20px;
 }
 
-@media (min-width: @tablet-width) {}
+@media (min-width: @tablet-width) {
+  .achivements-list {
+    margin: 0 60px;
+  }
+}
 
 @media (min-width: @desktop-width) {
   .achivements-list {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    height: 228px;
+    flex-direction: column;
+    height: 175px;
+    margin: 35px 60px 0;
   }
 }

@@ -9,6 +9,15 @@
   background: url("../img/checkbox_checked.svg") 0 0 no-repeat;
 }
 
+.achivement-checkbox:checked + label:hover::before,
+.achivement-checkbox:checked + label:focus::before {
+  background: url("../img/checkbox_checked_hover.svg") 0 0 no-repeat;
+}
+
+.achivement-checkbox:checked + label:active::before {
+  background: url("../img/checkbox_checked_active.svg") 0 0 no-repeat;
+}
+
 .achivement-checkbox + label::before {
   content: "";
   position: absolute;
@@ -18,4 +27,20 @@
   width: 39px;
   height: 39px;
   background: url("../img/checkbox.svg") 0 0 no-repeat;
+}
+
+.achivement-checkbox + label:hover::before,
+.achivement-checkbox + label:focus::before {
+  background: url("../img/checkbox_hover.svg") 0 0 no-repeat;
+}
+
+.achivement-checkbox + label:active::before {
+  background: url("../img/checkbox_active.svg") 0 0 no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .achivement-checkbox:checked {
+    top: 0;
+    left: 0;
+  }
 }

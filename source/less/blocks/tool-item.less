@@ -4,8 +4,34 @@
     justify-content: space-between;
     align-items: flex-end;
     border-bottom: solid 1px fade(@light-black, 10%);
-    padding: 36px 0 34px;
+    padding: 10px 0 20px;
+
+    &:nth-child(2) {
+      padding-top: 30px;
+    }
+
+    &:last-child {
+      padding-top: 25px;
+      align-items: center;
+    }
   }
 }
 
-@media (min-width: @desktop-width) {}
+@media (min-width: @desktop-width) {
+  .tool-item {
+    padding-top: 0;
+    padding-bottom: 15px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:nth-child(2) {
+      padding-top: 10px;
+    }
+
+    &:last-child {
+      padding-top: 15px;
+      align-items: flex-start;
+    }
+  }
+}

@@ -1,16 +1,34 @@
 .send-button {
   .green-button;
   padding: 23px 45px;
+
+  &:hover,
+  :focus {
+    background-color: @dark-green;
+    border: 2px solid @dark-green;
+  }
+
+  &:active {
+    background-color: @dark-green;
+    border: 2px solid @dark-green;
+    color: fade(@white, 30%);
+  }
+
+  &:disabled {
+    background-color: @grey-whisper;
+    border: 2px solid @grey-whisper;
+    color: @white;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .send-button {
-
+    padding: 23px 55px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .send-button {
-
+    margin-top: 20px;
   }
 }

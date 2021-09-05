@@ -1,12 +1,13 @@
 .upload__wrapper {
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .upload__slogan {
   color: #283645;
   line-height: 30px;
   text-align: center;
-  margin: 49px 20px 52px;
+  margin: 40px 20px 45px;
 }
 
 .upload__content {
@@ -20,34 +21,66 @@
 }
 
 .upload__pic {
-  margin: 20px 20px 43px;
+  margin: 20px 20px 35px;
 }
 
 @media (min-width: @tablet-width) {
+  .upload__wrapper {
+    margin-bottom: 0;
+  }
+
   .upload__slogan {
     font-size: 18px;
-    margin: 73px auto 78px;
+    margin: 73px auto 70px;
   }
 
   .upload__form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 255px 255px;
   }
 
   .upload__pic {
-    grid-row: span 2;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    margin-top: 55px;
+  }
+
+  .upload__form fieldset {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin-top: 55px;
+    margin-left: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .upload__wrapper {
+    margin-bottom: 30px;
+  }
+
   .upload__slogan {
-    margin: 67px auto 75px;
+    margin: 55px auto 65px;
+  }
+
+  .upload__content {
+    width: 940px;
+    margin: 0 auto;
   }
 
   .upload__form {
     width: 940px;
-    grid-template-rows: 2fr 1fr;
-    margin: 57px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 257px 257px;
+    margin: 0 auto;
+  }
+
+  .upload__pic {
+    margin-top: 60px;
+    margin-left: 80px;
+  }
+
+  .upload__form fieldset {
+    margin-left: 0;
   }
 }

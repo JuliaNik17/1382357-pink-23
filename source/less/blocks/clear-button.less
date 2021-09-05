@@ -3,16 +3,26 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
-  padding: 21px 103px;
+  padding: 18px 95px 15px 103px;
   opacity: 0.1;
   border: 3px solid @light-black;
   border-radius: 30px;
-  margin: 0 20px 41px;
+  margin: 0 20px 40px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: @light-black;
+    color: @white;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .clear-button {
-    padding: 21px 93px;
+    padding: 15px 93px;
     margin-bottom: 54px;
   }
 }

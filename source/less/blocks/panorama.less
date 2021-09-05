@@ -6,38 +6,71 @@
 .panorama__pic img {
   width: 100%;
   min-height: 137px;
-  // background: @white url("../img/article_photo_one.jpg") no-repeat;
   margin: 0;
   background-size: cover;
 }
 
+.panorama__pic {
+  position: relative;
+  display: block;
+}
+
+.panorama__pic::before {
+  content: "";
+  width: 140px;
+  height: 36px;
+  background-image: url("../../img/panorama_ribbon.svg");
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
 .panorama .photo-author {
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.panorama .photo-text {
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+
+.panorama .like-counter {
+  margin: 12px 0;
 }
 
 .panorama__wrapper {
   margin: 0 20px;
   background-color: @grey-background;
-  // padding-top: 25px;
+  padding-top: 10px;
 }
 
 @media (min-width: @tablet-width) {
-  // .panorama {
-  //   grid-column: span 2;
-  // }
-
   .panorama__wrapper {
     display: flex;
     flex-direction: column;
-    position: relative;
     margin: 0 20px 50px;
-    padding: 30px 70px 32px 30px;
+    padding: 15px 70px 25px 15px;
   }
 
-  .panorama__wrapper .photo-like {
-    position: absolute;
-    top: 30px;
-    right: 30px;
+  .panorama .photo-author {
+    margin-left: 15px;
+    order: 1;
+  }
+
+  .panorama .photo-text {
+    margin-left: 15px;
+    margin-right: 0;
+    order: 3;
+  }
+
+  .panorama .photo-like {
+    order: 2;
+    margin: -23px 20px 0 425px;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 120px;
   }
 
   .panorama__wrapper button {
@@ -45,25 +78,37 @@
     margin-right: 0;
   }
 
-  // .panorama__pic img {
-  //   // background-image: url("../img/article_photo_one_tablet.jpg");
-  //   height: 509px;
-  //   margin: 0 -20px;
-  // }
+  .panorama__pic::before {
+    top: 55px;
+  }
+
+  .panorama .like-counter {
+    margin: 0;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
-  // .panorama {
-  //   grid-column: span 3;
-  // }
-
   .panorama__wrapper {
-    width: 874px;
-    margin: 0 auto 50px;
-    padding: 30px 39px 31px 27px;
+    width: 940px;
+    margin: 0 auto 45px;
+    padding: 17px 0 25px;
+  }
+
+  .panorama__pic::before {
+    right: 130px;
+  }
+
+  .panorama .photo-author {
+    margin-left: 27px;
   }
 
   .panorama .photo-text {
     margin: 0;
+    margin-left: 27px;
+  }
+
+  .panorama .photo-like {
+    margin-left: 760px;
   }
 }

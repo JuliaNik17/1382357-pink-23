@@ -1,7 +1,5 @@
 @media (max-width: @mobile-width-only) {
-  .tool-range__crop,
-  .tool-range__fill,
-  .tool-range__contrast {
+  .tool-range {
     display: none;
   }
 }
@@ -10,4 +8,8 @@
 
 }
 
-@media (min-width: @desktop-width) {}
+@media (min-width: @desktop-width) {
+  .tool-range {
+    margin-top: 10px;
+  }
+}
