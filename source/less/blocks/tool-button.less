@@ -6,11 +6,19 @@
 .tool-button__fill {
   fill: @light-black;
   opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .tool-button__contrast {
   fill: @light-black;
   opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -41,15 +49,19 @@
   .tool-button__crop {
     width: 44px;
     height: 44px;
+    margin-right: 50px;
   }
 
   .tool-button__fill {
     width: 48px;
     height: 43px;
+    margin-right: 45px;
   }
 
   .tool-button__contrast {
     width: 32px;
     height: 32px;
+    margin-left: 5px;
+    margin-right: 55px;
   }
 }

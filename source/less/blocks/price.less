@@ -1,17 +1,42 @@
 .price {
   width: 100%;
   background-color: @grey-background;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    left: 0;
+    top: -10px;
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    background-color: @white;
+    background-image: linear-gradient(-6deg, @grey-background 50%, @white 50%);
+  }
 }
 
 .price__wrapper {
-  display: block;
-  width: 100%;
-  margin: 83px auto 0;
+  margin: 105px auto 0;
 }
 
 .price__table {
-  width: 100%;
+  width: 86%;
   margin: 0 auto;
+  position: relative;
+  border-left: @grey-background solid 2px;
+  border-right: @grey-background solid 2px;
+}
+
+.price__table--standart::before {
+  content: "";
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  top: 3px;
+  left: 20px;
+  background-image: url("../img/price_ribbon.svg");
+  z-index: 5;
 }
 
 .price__table--tablet {
@@ -19,8 +44,12 @@
 }
 
 .price__toggles {
+  width: 56px;
+  margin: 0 auto;
+  display: flex;
   text-align: center;
-  padding-top: 45px;
+  justify-content: space-between;
+  padding-top: 25px;
   padding-bottom: 49px;
 }
 
@@ -28,9 +57,10 @@
   .price__wrapper {
     width: 95%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-top: 114px;
-    padding-bottom: 70px;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 75px;
+    padding-bottom: 60px;
+    transform: translate(0);
   }
 
   .price__table--tablet {
@@ -42,13 +72,35 @@
   .price__toggles {
     display: none;
   }
+
+  .price::before {
+    top: -20px;
+    height: 80px;
+    background-image: linear-gradient(-3deg, @grey-background 50%, @white 50%);
+  }
+
+  .price__table--standart::before {
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/price_ribbon_tablet.svg");
+    z-index: 5;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .price__wrapper {
     width: 940px;
-    // padding: 98px auto;
     justify-content: center;
     align-items: center;
+    margin-top: 150px;
+    padding-bottom: 85px;
+  }
+
+  .price::before {
+    top: -25px;
+    height: 120px;
   }
 }

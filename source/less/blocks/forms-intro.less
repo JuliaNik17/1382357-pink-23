@@ -1,13 +1,25 @@
 .forms-intro {
   line-height: 30px;
-  margin: 0 20px 55px;
+  margin: 0 20px 37px;
   text-align: center;
+}
+
+@media (max-width: @mobile-width-only) {
+  .forms-intro__tablet {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .forms-intro {
     font-size: 18px;
+    margin: 0 60px 75px;
   }
 }
 
-@media (min-width: @desktop-width) {}
+@media (min-width: @desktop-width) {
+  .forms-intro {
+    width: 756px;
+    margin: 0 auto 65px;
+  }
+}

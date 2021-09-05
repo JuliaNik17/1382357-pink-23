@@ -1,11 +1,13 @@
 .name-data {
   border: none;
+  padding: 0;
 }
 
 .name-data__list {
   .list-style;
   padding: 0 20px;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .name-data__item {
@@ -17,12 +19,22 @@
   .red-lable;
   margin-left: 23px;
   margin-bottom: 17px;
+  margin-top: 5px;
 }
 
 .name-data__item input {
   .black-input;
-  padding: 23px 0 23px 20px;
-  margin: 0 0 29px;
+  padding: 15px 0 15px 20px;
+  margin: 0 0 25px;
+
+  &:hover,
+  &:focus {
+    border: 2px solid @light-black;
+  }
+
+  &:active {
+    border: 2px solid @red-cerise;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -30,15 +42,21 @@
     order: 1;
   }
 
+  .name-data__list {
+    padding-bottom: 0;
+  }
+
   .name-data__item {
     flex-direction: row;
     // justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
   }
 
   .name-data__item label {
     margin: 0;
     margin-right: 20px;
+    padding-bottom: 20px;
   }
 
   .name-data__item--familyname,
@@ -54,7 +72,25 @@
 }
 
 @media (min-width: @desktop-width) {
+  .name-data {
+    margin-top: 20px;
+  }
+
   .name-data__list {
     padding: 0;
+    margin-bottom: 0;
+  }
+
+  .name-data__item {
+    margin-bottom: 55px;
+  }
+
+  .name-data__item label {
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .name-data__item:last-child {
+    margin-bottom: 0;
   }
 }

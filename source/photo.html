@@ -72,7 +72,7 @@
     </header>
     <main class="page-main">
       <section class="main-head">
-        <h2>Фотографии<br> пользователей</h2>
+        <h2 class="main-head__photo">Фотографии<br> пользователей</h2>
       </section>
       <section class="photo">
         <h2 class="visually-hidden">Фотографии пользователей</h2>
@@ -82,10 +82,10 @@
           <a class="panorama__pic" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/article_photo_one_desktop.webp 1x, img/article_photo_one_desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/article_photo_one_tablet.webp 1x, img/article_photo_one_tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/article_photo_one_tablet.webp 1x, img/article_photo_one_tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/article_photo_one.webp 1x, img/article_photo_one@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/article_photo_one_desktop.jpg 1x, img/article_photo_one_desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/article_photo_one_tablet.jpg 1x, img/article_photo_one_tablet@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/article_photo_one_tablet.jpg 1x, img/article_photo_one_tablet@2x.jpg 2x">
               <img src="img/article_photo_one.jpg" alt="Панорама">
             </picture>
           </a>
@@ -103,16 +103,18 @@
           <article class="photo-post">
             <a class="photo-pic" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/atricle_photo_two_desktop.jpg 1x, img/article_photo_two_desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/article_photo_two_tablet.jpg 1x, img/article_photo_two_tablet@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/article_photo_two_desktop.jpg 1x, img/article_photo_two_desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/article_photo_two_tablet.jpg 1x, img/article_photo_two_tablet@2x.jpg 2x">
                 <img src="img/article_photo_two.jpg" alt="Фото автомобиля на стоянке">
               </picture>
             </a>
-            <p class="photo-author">Левон <time datetime="26.07.2021"> (5 часов назад)</time></p>
-            <p class="photo-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="photo-like">
-              <button class="like-button button"><img src="img/like_button.svg"></button>
-              <p class="like-counter">Нравится: 356</p>
+            <div class="photo-post__wrapper">
+              <p class="photo-author">Левон <time datetime="26.07.2021"> (5 часов назад)</time></p>
+              <p class="photo-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="photo-like">
+                <button class="like-button button"><img src="img/like_button.svg"></button>
+                <p class="like-counter">Нравится: 356</p>
+              </div>
             </div>
           </article>
 
@@ -120,15 +122,17 @@
             <a class="photo-post__pic-three" href="#">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/article_photo_three_desktop.jpg 1x, img/article_photo_three_desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/article_photo_three_tablet.jpg 1x, img/article_photo_three_tablet@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/article_photo_three_tablet.jpg 1x, img/article_photo_three_tablet@2x.jpg 2x">
                 <img src="img/article_photo_three.jpg" alt="Фото барабанов">
               </picture>
             </a>
-            <p class="photo-author">Антон <time datetime="26.07.2021"> (12 часов назад)</time></p>
-            <p class="photo-text">Соседи будут рады!</p>
-            <div class="photo-like">
-              <button class="like-button button"><img src="img/like_button.svg"></button>
-              <p class="like-counter">Нравится: 666</p>
+            <div class="photo-post__wrapper">
+              <p class="photo-author">Антон <time datetime="26.07.2021"> (12 часов назад)</time></p>
+              <p class="photo-text">Соседи будут рады!</p>
+              <div class="photo-like">
+                <button class="like-button button"><img src="img/like_button.svg"></button>
+                <p class="like-counter">Нравится: 666</p>
+              </div>
             </div>
           </article>
 
@@ -136,15 +140,17 @@
             <a class="photo-post__pic-foure" href="#">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/article_photo_foure_desktop.jpg 1x, img/article_photo_foure_desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/article_photo_foure_tablet.jpg 1x, img/article_photo_foure_tablet@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/article_photo_foure_tablet.jpg 1x, img/article_photo_foure_tablet@2x.jpg 2x">
                 <img src="img/article_photo-foure.jpg" alt="Фото стеклянной крыши">
               </picture>
             </a>
-            <p class="photo-author">Борис <time datetime="26.07.2021"> (20 часов назад)</time></p>
-            <p class="photo-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="photo-like">
-              <button class="like-button button"><img src="img/like_button.svg"></button>
-              <p class="like-counter">Нравится: 215</p>
+            <div class="photo-post__wrapper">
+              <p class="photo-author">Борис <time datetime="26.07.2021"> (20 часов назад)</time></p>
+              <p class="photo-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="photo-like">
+                <button class="like-button button"><img src="img/like_button.svg"></button>
+                <p class="like-counter">Нравится: 215</p>
+              </div>
             </div>
           </article>
 
@@ -152,15 +158,17 @@
             <a class="photo-post__pic-five" href="#">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/article_photo_five_desktop.jpg 1x, img/article_photo_five_desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/article_photo_five_tablet.jpg 1x, img/article_photo_five_tablet@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/article_photo_five_tablet.jpg 1x, img/article_photo_five_tablet@2x.jpg 2x">
                 <img src="img/article_photo_five.jpg" alt="Фото кубанской бахчи">
               </picture>
             </a>
-            <p class="photo-author">Сергей <time datetime="26.07.2021"> (25 часов назад)</time></p>
-            <p class="photo-text">Самая кубанская в мире!</p>
-            <div class="photo-like">
-              <button class="like-button button"><img src="img/like_button.svg"></button>
-              <p class="like-counter">Нравится: 4</p>
+            <div class="photo-post__wrapper">
+              <p class="photo-author">Сергей <time datetime="26.07.2021"> (25 часов назад)</time></p>
+              <p class="photo-text">Самая кубанская в мире!</p>
+              <div class="photo-like">
+                <button class="like-button button"><img src="img/like_button.svg"></button>
+                <p class="like-counter">Нравится: 4</p>
+              </div>
             </div>
           </article>
 
@@ -168,15 +176,17 @@
             <a class="photo-post__pic-six" href="#">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/article_photo_six_desktop.jpg 1x, img/article_photo_six_desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/article_photo_six_tablet.jpg 1x, img/article_photo_six_tablet@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/article_photo_six_tablet.jpg 1x, img/article_photo_six_tablet@2x.jpg 2x">
                 <img src="img/article_photo_six.jpg" alt="Фото ног на фоне гор">
               </picture>
             </a>
-            <p class="photo-author">Максим <time datetime="26.07.2021"> (40 часов назад)</time></p>
-            <p class="photo-text">Где снег-то?</p>
-            <div class="photo-like">
-              <button class="like-button button"><img src="img/like_button.svg"></button>
-              <p class="like-counter">Нравится: 150</p>
+            <div class="photo-post__wrapper">
+              <p class="photo-author">Максим <time datetime="26.07.2021"> (40 часов назад)</time></p>
+              <p class="photo-text">Где снег-то?</p>
+              <div class="photo-like">
+                <button class="like-button button"><img src="img/like_button.svg"></button>
+                <p class="like-counter">Нравится: 150</p>
+              </div>
             </div>
           </article>
 
@@ -184,15 +194,17 @@
             <a class="photo-post__pic-seven" href="#">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/article_photo_seven_desktop.jpg 1x, img/article_photo_seven_desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/article_photo_seven_tablet.jpg 1x, img/article_photo_seven_tablet@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/article_photo_seven_tablet.jpg 1x, img/article_photo_seven_tablet@2x.jpg 2x">
                 <img src="img/article_photo_seven.jpg" alt="Фото крыла самолета на фоне заката">
               </picture>
             </a>
-            <p class="photo-author">Надежда <time datetime="26.07.2021"> (45 часов назад)</time></p>
-            <p class="photo-text">Всем GM и взаимные лайки!</p>
-            <div class="photo-like">
-              <button class="like-button button"><img src="img/like_button.svg"></button>
-              <p class="like-counter">Нравится: 2560</p>
+            <div class="photo-post__wrapper">
+              <p class="photo-author">Надежда <time datetime="26.07.2021"> (45 часов назад)</time></p>
+              <p class="photo-text">Всем GM и взаимные лайки!</p>
+              <div class="photo-like">
+                <button class="like-button button"><img src="img/like_button.svg"></button>
+                <p class="like-counter">Нравится: 2560</p>
+              </div>
             </div>
           </article>
         </div>
@@ -205,7 +217,7 @@
           <div class="upload__content">
             <form class="upload__form" method="get" action="https://echo.htmlacademy.ru">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/upload_pic_tablet.jpg">
+                <source media="(min-width: 660px)" srcset="img/upload_pic_tablet.jpg">
                 <img class="upload__pic" src="img/upload_pic.jpg" alt="Заргузившееся фото">
               </picture>
 
@@ -217,8 +229,11 @@
                         <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" fill="#D22856"/>
                         </svg>
                     </button>
-                    <div class="tool-range__crop">
-                      <img src="img/upload_scale_crop.svg" width="240" height="14" alt="Ползунок">
+                    <div class="tool-range">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/upload_scale_crop_desktop.svg">
+                        <img src="img/upload_scale_crop.svg" alt="Ползунок">
+                      </picture>
                     </div>
                   </li>
 
@@ -229,8 +244,11 @@
                         <path d="M48 40H0V43H48V40Z"/>
                         </svg>
                     </button>
-                    <div class="tool-range__fill">
-                      <img src="img/upload_scale_fill.svg" width="240" height="14" alt="Ползунок">
+                    <div class="tool-range">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/upload_scale_fill_desktop.svg">
+                        <img src="img/upload_scale_fill.svg" alt="Ползунок">
+                      </picture>
                     </div>
                   </li>
 
@@ -241,8 +259,11 @@
                         <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29"/>
                         </svg>
                     </button>
-                    <div class="tool-range__contrast">
-                      <img src="img/upload_scale_contrast.svg" width="240" height="14" alt="Ползунок">
+                    <div class="tool-range">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/upload_scale_contrast_desktop.svg">
+                        <img src="img/upload_scale_contrast.svg" alt="Ползунок">
+                      </picture>
                     </div>
                   </li>
                 </ul>
@@ -258,7 +279,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="index.html">
+        <a class="page-footer__logo">
           <svg class="footer-logo" width="145" height="40" viewBox="0 0 145 40" fill="none">
             <path d="M71.005 18.5486C71.0049 18.2125 71.1358 17.8898 71.3697 17.6494C71.6037 17.409 71.922 17.2701 72.2568 17.2623H79.39C84.4469 17.2623 87.7751 19.9645 87.7751 24.3918V24.4516C87.7751 29.2977 83.7415 31.8105 78.9727 31.8105H73.5384V38.611C73.5539 38.7874 73.5328 38.9651 73.4762 39.1329C73.4196 39.3006 73.3289 39.4547 73.2097 39.5854C73.0906 39.716 72.9457 39.8204 72.7842 39.8918C72.6227 39.9631 72.4481 40 72.2717 40C72.0952 40 71.9207 39.9631 71.7592 39.8918C71.5977 39.8204 71.4527 39.716 71.3336 39.5854C71.2145 39.4547 71.1237 39.3006 71.0671 39.1329C71.0106 38.9651 70.9894 38.7874 71.005 38.611V18.5486ZM79.0721 29.5171C82.7778 29.5171 85.2119 27.5228 85.2119 24.5314V24.4716C85.2119 21.2608 82.8175 19.5956 79.2509 19.5956H73.588V29.4772L79.0721 29.5171Z" fill="currentColor"/>
             <path d="M92.5935 18.389C92.5779 18.2126 92.5991 18.0349 92.6556 17.8671C92.7122 17.6994 92.803 17.5452 92.9221 17.4146C93.0412 17.2839 93.1862 17.1796 93.3477 17.1082C93.5092 17.0369 93.6837 17 93.8602 17C94.0366 17 94.2112 17.0369 94.3727 17.1082C94.5342 17.1796 94.6791 17.2839 94.7982 17.4146C94.9174 17.5452 95.0081 17.6994 95.0647 17.8671C95.1213 18.0349 95.1425 18.2126 95.1269 18.389V38.611C95.1425 38.7874 95.1213 38.9651 95.0647 39.1329C95.0081 39.3006 94.9174 39.4548 94.7982 39.5854C94.6791 39.7161 94.5342 39.8204 94.3727 39.8918C94.2112 39.9631 94.0366 40 93.8602 40C93.6837 40 93.5092 39.9631 93.3477 39.8918C93.1862 39.8204 93.0412 39.7161 92.9221 39.5854C92.803 39.4548 92.7122 39.3006 92.6556 39.1329C92.5991 38.9651 92.5779 38.7874 92.5935 38.611V18.389Z" fill="currentColor"/>
@@ -272,22 +293,25 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
-                <svg class="social__icon" width="48" height="48">
-                  <use xlink:href="img/sprite.svg#twitter-icon"></use>
+                <svg class="social__icon" width="48" height="48" viewBox="0 0 54 54" fill="none">
+                  <circle opacity="" cx="27" cy="27" r="25.5" fill="white" stroke="currentColor" stroke-width="3"/>
+                  <path opacity="1" d="M29.5641 20.1689C30.2458 19.9538 30.9837 19.9439 31.6719 20.1405C32.3602 20.3371 32.9633 20.7301 33.3947 21.2632C34.1053 21.0538 34.8055 20.816 35.5263 20.6066C35.5164 20.9258 35.4299 21.2391 35.2732 21.5237C35.1165 21.8084 34.8935 22.0574 34.6201 22.2528C34.8726 22.2788 35.1281 22.2511 35.3673 22.172C35.6064 22.0928 35.8228 21.9642 36 21.7961C35.901 22.2099 35.6999 22.597 35.4123 22.9271C35.1247 23.2572 34.7585 23.5214 34.3421 23.6992C34.095 29.9699 30.9748 34.1662 23.6533 33.9949H23.1487C22.7059 33.9949 18.7311 33.5667 18 32.2441C19.752 32.4899 21.5389 32.0976 22.984 31.1498C21.9542 30.8643 20.1316 30.7026 19.8227 28.4093C20.2108 28.5434 20.6321 28.5731 21.0378 28.495C19.7609 27.7052 18.3398 27.0391 18.4222 24.9933C18.8196 25.2988 19.3269 25.4551 19.8432 25.431C19.1018 25.2026 17.7529 22.3099 18.8959 20.8255C20.8215 22.5478 22.8604 24.1749 26.4851 24.3367C26.7117 22.2052 27.6899 20.7779 29.5641 20.1689Z" fill="#D22856"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-                <svg class="social__icon" width="48" height="48">
-                  <use xlink:href="img/sprite.svg#facebook-icon"></use>
+                <svg class="social__icon" width="48" height="48" viewBox="0 0 54 54" fill="none">
+                  <circle opacity="" cx="27" cy="27" r="25.5" fill="white" stroke="currentColor" stroke-width="3"/>
+                  <path d="M29.5087 21.1932H32V18H29.0208C25.7612 18.1711 24.5986 20.2714 25.0761 23.8163H23V27.1521H25.0761V36H29.0208V27.1521H31.9792V23.8163H29.0104C28.9896 22.8184 28.9689 21.5259 29.5087 21.1932Z" fill="#D22856"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <svg class="social__icon" width="48" height="48">
-                  <use xlink:href="img/sprite.svg#youtube-icon"></use>
+                <svg class="social__icon" width="48" height="48" viewBox="0 0 54 54" fill="none">
+                  <circle opacity="" cx="27" cy="27" r="25.5" fill="white" stroke="currentColor" stroke-width="3"/>
+                  <path d="M23.8336 33.8089C23.6463 33.9278 23.4247 33.9941 23.1963 33.9996C22.9678 34.0051 22.7426 33.9495 22.5487 33.8398C22.3548 33.7301 22.2007 33.571 22.1056 33.3824C22.0106 33.1938 21.9787 32.984 22.014 32.779V22.221C21.9787 22.016 22.0106 21.8062 22.1056 21.6176C22.2007 21.429 22.3548 21.2699 22.5487 21.1602C22.7426 21.0505 22.9678 20.9949 23.1963 21.0004C23.4247 21.0059 23.6463 21.0722 23.8336 21.1911L36.2333 26.6928C37.2556 27.1382 37.2556 27.8618 36.2333 28.3072L23.8336 33.8089Z" fill="#D22856"/>
                 </svg>
               </a>
             </li>
@@ -296,8 +320,8 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__logo" width="27" height="34">
-              <use xlink:href="img/sprite.svg#html-academy-logo"></use>
+            <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="none">
+              <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="currentColor"/>
             </svg>
           </a>
         </div>

@@ -1,13 +1,14 @@
 .comment {
   border: none;
-  margin: 0 20px 52px;
+  margin: 0 20px 40px;
   padding: 0;
 }
 
 .comment legend {
   .red-legend;
   background-color: @white;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
+  padding-left: 50px;
 }
 
 @media (min-width: @tablet-width) {
@@ -15,10 +16,13 @@
     order: 5;
     border: 2px solid @grey-whisper;
     border-radius: 1px;
-    padding: 42px 60px 53px;
+    padding: 20px 60px 50px;
+    margin-bottom: 48px;
   }
 
   .comment legend {
+    width: auto;
+    margin: 0 auto;
     padding: 14px 38px;
   }
 }
@@ -27,11 +31,11 @@
   .comment {
     grid-column: span 2;
     margin: 0;
-    padding: 25px 60px 45px;
+    padding: 25px 80px 40px 60px;
   }
 
   .comment legend {
-    margin: 0;
-    padding: 14px 38px;
+    margin: 0 auto;
+    padding: 10px 38px;
   }
 }
