@@ -14,6 +14,11 @@
   background-color: @grey-background;
 }
 
+.upload__form {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .upload__form fieldset {
   border: none;
   margin: 0;
@@ -21,7 +26,7 @@
 }
 
 .upload__pic {
-  margin: 20px 20px 35px;
+  margin: 20px 0 35px;
 }
 
 @media (min-width: @tablet-width) {
@@ -31,13 +36,17 @@
 
   .upload__slogan {
     font-size: 18px;
-    margin: 73px auto 70px;
+    margin: 65px auto 70px;
   }
 
   .upload__form {
+    width: 660px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 300px 300px;
     grid-template-rows: 255px 255px;
+    margin: 0 auto;
+    padding: 0 20px;
+    grid-column-gap: 20px;
   }
 
   .upload__pic {
@@ -60,7 +69,7 @@
   }
 
   .upload__slogan {
-    margin: 55px auto 65px;
+    margin: 65px auto;
   }
 
   .upload__content {
@@ -72,7 +81,9 @@
     width: 940px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 257px 257px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    grid-column-gap: 0;
   }
 
   .upload__pic {

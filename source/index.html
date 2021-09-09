@@ -76,13 +76,18 @@
       <section class="intro">
         <div class="intro__wrapper">
           <header class="intro__header">
-            <h2 class="visually-hidden">Немного о приложении "Пинк"</h2>
+            <div class="intro__header-content">
+              <h2 class="visually-hidden">Немного о приложении "Пинк"</h2>
             <p class="intro__slogan">Взгляните на жизнь<br> иначе!</p>
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/intro_phone_desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/intro_phone_tablet.svg">
-              <img class="intro__img" src="img/intro_phone.svg" alt="Рука с телефоном, в котором уже есть наше приложение">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/intro_phone_desktop.webp 1x, img/intro_phone_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/intro_phone_tablet.webp 1x, img/intro_phone_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/intro_phone.webp.webp 1x, img/intro_phone@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/intro_phone_desktop.png 1x, img/intro_phone_desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/intro_phone_tablet.png 1x, img/intro_phone_tablet@2x.png 2x">
+              <img class="intro__img" src="img/intro_phone.png" srcset="img/intro_phone@2x.png 2x" alt="Рука с телефоном, в котором уже есть наше приложение">
             </picture>
+            </div>
           </header>
           <div class="intro__content">
             <a class="intro__button" href="https://apps.apple.com/ru/genre/ios/id36">Скачать приложение</a>
@@ -132,9 +137,10 @@
         <div class="information__wrapper">
           <header class="information__header">
             <h2 class="visually-hidden">Информация о приложении "Пинк"</h2>
-            <p class="information__slogan">Устали от серости мегаполиса?</p>
+            <p class="information__question">Устали от серости мегаполиса?</p>
             <p class="information__slogan">Нам есть, что вам<br> предложить!</p>
           </header>
+          <div class="information__decoration"></div>
           <div class="information__content">
             <ul class="information__list">
               <li class="information__item">
@@ -150,12 +156,13 @@
                 <p class="information__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/information-list_picture_smile_desktop.jpg 1x, img/information-list_picture_smile_desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/information-list_picture_smile_tablet.jpg 1x, img/information-list_picture_smile_tablet@2x.jpg 2x">
-              <img class="information__picture" src="img/information-list_picture_smile.jpg" alt="Фотография на телефоне в розовом цвете">
-            </picture>
-
+            <div class="information__pic-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/information-list_picture_smile_desktop.jpg 1x, img/information-list_picture_smile_desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/information-list_picture_smile_tablet.jpg 1x, img/information-list_picture_smile_tablet@2x.jpg 2x">
+                <img class="information__picture" src="img/information-list_picture_smile.jpg" alt="Фотография на телефоне в розовом цвете">
+              </picture>
+            </div>
           </div>
         </div>
       </section>
@@ -168,7 +175,7 @@
           </picture>
           <div class="round-diagram__info">
             <h3 class="round-diagram__info-head">Эффект <br> на 24 часа!</h3>
-            <p class="round-diagram__info-text">Британские ученые провели исследования<br> и доказали, что положительный эффект<br> от использования приложения длится<br> целые сутки!</p>
+            <p class="round-diagram__info-text">Британские ученые провели исследования <br> и доказали, что положительный эффект <br> от использования приложения длится <br> целые сутки!</p>
             <a class="round-diagram__info-link">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -202,6 +209,7 @@
         </div>
       </section>
       <section class="price">
+        <div class="price__decoration"></div>
         <div class="price__wrapper price-slider">
           <h2 class="visually-hidden">Наши тарифы</h2>
           <table class="price__table price__table--tablet">
@@ -288,7 +296,7 @@
         <div class="contacts__wrapper">
           <header class="contacts__header">
             <h2 class="visually-hidden">Наши контакты</h2>
-            <p class="contacts__slogan">Остались вопросы?<br> Свяжитесь с нами!</p>
+            <p class="contacts__slogan">Остались вопросы? <br> Свяжитесь с нами!</p>
           </header>
           <ul class="contacts__list">
             <li class="contacts__item">
@@ -301,7 +309,7 @@
             </li>
             <li class="contacts__item">
               <h3 class="contacts__item-title">Приезжайте в гости:</h3>
-              <a class="contacts__item-link">ул. Большая<br> Конюшенная, 19/8</a>
+              <a class="contacts__item-link">ул. Большая Конюшенная, 19/8</a>
             </li>
           </ul>
           <div class="contacts__map">

@@ -1,6 +1,25 @@
 .photo-post {
-  margin: 0 20px 30px;
+  margin: 0 20px 20px;
   background-color: @grey-background;
+}
+
+.photo-post__wrapper--levon .photo-autor,
+.photo-post__wrapper--anton .photo-autor,
+.photo-post__wrapper--sergey .photo-autor {
+  margin-top: 12px;
+}
+
+.photo-post__wrapper--anton .photo-like,
+.photo-post__wrapper--sergey .photo-like,
+.photo-post__wrapper--maxim .photo-like {
+  margin-top: 12px;
+}
+
+.photo-post__wrapper {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 280px;
 }
 
 @media (min-width: @tablet-width) {
@@ -9,11 +28,27 @@
   }
 
   .photo-post__wrapper {
-    height: 130px;
+    width: 100%;
+    height: 145px;
     position: relative;
+  }
+
+  .photo-post__wrapper--sergey,
+  .photo-post__wrapper--boris {
+    margin-top: 2px;
+  }
+
+  .photo-post__wrapper--maxim,
+  .photo-post__wrapper--nadya {
+    margin-top: 5px;
   }
 }
 
 @media (min-width: @desktop-width) {
-
+  .photo-post__wrapper--sergey,
+  .photo-post__wrapper--boris,
+  .photo-post__wrapper--maxim,
+  .photo-post__wrapper--nadya {
+    margin-top: 0;
+  }
 }

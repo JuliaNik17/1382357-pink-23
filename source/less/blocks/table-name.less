@@ -1,8 +1,25 @@
 .table-name {
   font-weight: 700;
   font-size: 16px;
-  line-height: 12px;
-  margin: 19px auto 15px;
-  padding: 0;
+  line-height: 30px;
+  margin: 10px auto 5px;
+  padding: 0 5px 0 0;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .table-name {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 12px auto 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table-name {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
 }

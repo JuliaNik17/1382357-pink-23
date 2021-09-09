@@ -2,6 +2,7 @@
   background: @black url("../img/background_mobile.jpg") no-repeat;
   background-position-x: center;
   margin: 0 auto;
+  background-size: cover;
 }
 
 .main-head__photo {
@@ -28,6 +29,7 @@
   .main-head {
     background: @black url("../img/background__tablet.jpg") no-repeat;
     background-position-x: center;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background_tablet@2x.jpg");
@@ -57,12 +59,12 @@
 @media (min-width: @desktop-width) {
   .main-head {
     width: 100%;
-    background: @black url("../img/background__desktop.jpg") no-repeat;
     background-position-x: center;
     margin: 0;
     margin-top: -110px;
     padding-top: 110px;
     padding-bottom: 90px;
+    background-size: cover;
   }
 
   .main-head h2 {

@@ -1,7 +1,16 @@
 .photo-pic {
-  margin: 0 auto 25px;
+  margin: 0 auto;
+  display: block;
 }
 
 .photo-pic img {
   background-position-x: center;
+  width: 100%;
+  background-size: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-pic {
+    width: 300px;
+  }
 }
