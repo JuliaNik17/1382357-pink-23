@@ -3,18 +3,18 @@
   border: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .app-question legend {
   .red-legend;
-  padding: 42px 70px 40px;
+  padding: 35px 70px 40px;
   width: 100%;
 }
 
 .app-question__list {
   .list-style;
-  padding: 0 20px;
+  padding: 0;
   margin: 0 auto;
   width: 85%;
 }
@@ -22,7 +22,7 @@
 .app-question__item {
   font-size: 18px;
   line-height: 30px;
-  margin-left: 70px;
+  margin-left: 65px;
   margin-bottom: 45px;
   position: relative;
 }
@@ -86,14 +86,19 @@
 
   .app-question__list {
     width: 80%;
-    margin: 40px 0 0 60px;
+    margin: 38px 0 0 58px;
     padding: 0;
     padding-bottom: 10px;
   }
 
   .app-question__item {
-    margin-left: 65px;
+    margin-left: 60px;
     margin-bottom: 45px;
+  }
+
+  .app-question__radio:checked + label::before {
+    top: -5px;
+    left: -60px;
   }
 }
 

@@ -4,8 +4,13 @@
   align-items: center;
 }
 
+.into__wrapper {
+  // min-width: 320px;
+  margin: 0 auto;
+}
+
 .intro__header {
-  width: fit-content;
+  width: 100%;
   background: url("../../img/background_mobile.jpg") no-repeat 0 0;
   background-position-x: center;
   background-size: cover;
@@ -33,7 +38,7 @@
   border: 3px solid @white;
   box-sizing: border-box;
   border-radius: 29px;
-  margin: 28px 20px 30px;
+  margin: 28px auto 30px;
   padding: 18px 35px 14px;
   font-weight: 700;
   font-size: 18px;
@@ -71,6 +76,17 @@
   text-align: center;
 }
 
+@media (max-width: @mobile-width-only) {
+  .intro__header-content {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .intro__button {
+    width: 280px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .intro {
     background: url("../img/background__tablet.jpg") no-repeat @dark-dark-blue;
@@ -78,6 +94,7 @@
     width: 100%;
     z-index: 3;
     margin: 0 auto;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background_tablet@2x.jpg");
@@ -132,6 +149,7 @@
   .intro__img {
     position: absolute;
     bottom: 0;
+    right: 0;
     z-index: 4;
   }
 }
@@ -139,10 +157,10 @@
 @media (min-width: @desktop-width) {
   .intro {
     width: 100%;
-    background: @light-black url("../img/background__desktop.jpg") no-repeat;
     background-position-x: center;
     margin-top: -110px;
     padding-top: 110px;
+    background-size: cover;
   }
 
   .into__wrapper {
@@ -154,7 +172,7 @@
     width: 40%;
     font-size: 50px;
     line-height: 68.09px;
-    padding: 114px 130px 35px 140px;
+    padding: 114px 130px 35px 138px;
     margin-bottom: 0;
   }
 

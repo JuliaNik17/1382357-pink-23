@@ -3,13 +3,22 @@
   margin-bottom: 50px;
 }
 
+.achivement-item:nth-child(2),
+.achivement-item:nth-child(4) {
+  margin-bottom: 55px;
+}
+
+.achivement-item:last-child {
+  margin-bottom: 45px;
+}
+
 @media (min-width: @tablet-width) {
   .achivement-item {
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   .achivement-item:last-child {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 }
 
@@ -20,7 +29,38 @@
     margin-bottom: 0;
   }
 
-  .achivement-item:last-child {
+  .achivement-item:last-child,
+  .achivement-item:nth-child(2),
+  .achivement-item:nth-child(4) {
     margin-bottom: 0;
+  }
+
+  .achivement-item:nth-child(3) label,
+  .achivement-item:nth-child(4) label {
+    margin-left: 60px;
+  }
+
+  .achivement-item:nth-child(5) label,
+  .achivement-item:nth-child(6) label {
+    margin-left: 45px;
+  }
+
+  .achivement-checkbox:checked + label::before {
+    top: -5px;
+    left: 0;
+  }
+
+  .achivement-item:nth-child(5) .achivement-checkbox:checked + label::before {
+    left: -10px;
+  }
+
+  .achivement-checkbox + label::before {
+    top: -5px;
+    left: 0;
+  }
+
+  .achivement-item:last-child .achivement-checkbox + label::before {
+    top: -5px;
+    left: -10px;
   }
 }
