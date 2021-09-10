@@ -21,8 +21,16 @@
     margin-bottom: 10px;
   }
 
+  .round-diagram__info-head--desktop {
+    display: none;
+  }
+
   .round-diagram__info-text {
     margin: 0;
+  }
+
+  .round-diagram__info-text--desktop {
+    display: none;
   }
 
   .round-diagram__info-link {
@@ -42,21 +50,24 @@
   .round-diagram__wrapper {
     width: 940px;
     grid-template-columns: 1fr 2fr;
-    margin: 0 auto 60px;
+    margin: 0 auto 57px;
   }
 
   .round-diagram__info {
-    padding-left: 55px;
+    padding-left: 57px;
   }
 
   .round-diagram__info-head {
     line-height: 30px;
-    margin-top: 95px;
-    // margin-left: 75px;
+    margin-top: 93px;
     margin-bottom: 25px;
   }
 
-  .round-diagram__info-head br {
+  .round-diagram__info-head--desktop {
+    display: block;
+  }
+
+  .round-diagram__info-head--tablet {
     display: none;
   }
 
@@ -66,7 +77,11 @@
     line-height: 30px;
   }
 
-  .round-diagram__info-text br {
+  .round-diagram__info-text--desktop {
+    display: block;
+  }
+
+  .round-diagram__info-text--tablet {
     display: none;
   }
 
