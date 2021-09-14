@@ -3,10 +3,6 @@
   text-align: center;
 }
 
-.reviews__img {
-  display: none;
-}
-
 .reviews__item-author {
   font-weight: 700;
   font-size: 18px;
@@ -76,9 +72,20 @@
 }
 
 @media (min-width: @desktop-width) {
-  .reviews__img {
-    display: block;
-    margin: 72px auto 50px;
+  .reviews__wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 185px auto 0;
+  }
+
+  .reviews__wrapper::before {
+    content: "";
+    width: 76px;
+    height: 63px;
+    position: absolute;
+    background-image: url("../img/quotes.svg");
+    top: -113px;
+    left: 562px;
   }
 
   .reviews__list {

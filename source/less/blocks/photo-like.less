@@ -1,6 +1,17 @@
 .photo-like {
   display: flex;
   margin: 10px 17px 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    background-image: url("../img/like_button.svg");
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -12,6 +23,12 @@
     left: 30px;
     bottom: 22px;
     width: 80%;
+
+    &::before {
+      top: 6px;
+      right: 0;
+      left: auto;
+    }
   }
 }
 
