@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.tool-button .button-active .tool-range__toggle {
+  background-color: @red-cerise;
+}
+
 .tool-button__fill {
   fill: @light-black;
   opacity: 0.3;
@@ -34,6 +38,10 @@
     fill: @red-cerise;
     opacity: 1;
     margin-right: 28px;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .tool-button__contrast {
@@ -42,6 +50,11 @@
     fill: @red-cerise;
     opacity: 1;
     margin-right: 32px;
+    margin-left: 5px;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -56,6 +69,10 @@
     width: 48px;
     height: 43px;
     margin-right: 45px;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .tool-button__contrast {
@@ -63,5 +80,9 @@
     height: 32px;
     margin-left: 5px;
     margin-right: 55px;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }

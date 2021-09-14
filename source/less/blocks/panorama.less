@@ -41,7 +41,11 @@
 }
 
 .panorama .like-counter {
-  margin: 12px 0;
+  margin: 12px 0 12px 31px;
+}
+
+.panorama .photo-like::before {
+  top: 18px;
 }
 
 .panorama__wrapper {
@@ -76,6 +80,10 @@
     top: 0;
     right: 0;
     width: 120px;
+
+    &::before {
+      top: 6px;
+    }
   }
 
   .panorama__wrapper button {
@@ -90,7 +98,6 @@
   .panorama .like-counter {
     margin: 0;
   }
-
 }
 
 @media (min-width: @desktop-width) {

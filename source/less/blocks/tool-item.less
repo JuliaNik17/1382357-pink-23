@@ -2,9 +2,10 @@
   .tool-item {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     border-bottom: solid 1px fade(@light-black, 10%);
     padding: 10px 0 20px;
+    position: relative;
+    align-items: center;
 
     &:nth-child(2) {
       padding-top: 30px;
@@ -12,7 +13,6 @@
 
     &:last-child {
       padding-top: 25px;
-      align-items: center;
     }
   }
 }
@@ -23,7 +23,6 @@
     padding-bottom: 15px;
     width: 100%;
     justify-content: flex-start;
-    align-items: center;
 
     &:nth-child(2) {
       padding-top: 10px;
@@ -36,6 +35,6 @@
   }
 
   .tool-item:last-child .tool-range {
-    margin-top: 8px;
+    margin-top: 15px;
   }
 }
